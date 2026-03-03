@@ -1,6 +1,12 @@
 permissions:
   id-token: write
   contents: read
+
+on:
+  push:
+    branches:
+    - 'main'
+
 jobs:
   run_job_with_aws:
     runs-on: ubuntu-latest
